@@ -1,6 +1,6 @@
 const http = require('http')
 const fs = require('fs')
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 
 function serveStaticFile(res, path, contentType, responseCode = 200) {
   fs.readFile(__dirname + path, (err, data) => {
